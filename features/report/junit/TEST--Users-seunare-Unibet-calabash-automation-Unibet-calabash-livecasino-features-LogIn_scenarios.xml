@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="App Login" skipped="0" tests="1" time="23.430941">
+<testcase classname="App Login" name="Enter valid login credentials" time="23.430941">
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[Geocoder: HTTP request being made for http://maps.googleapis.com/maps/api/geocode/json?address=Tower+of+London&language=en&sensor=false
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>
