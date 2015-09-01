@@ -67,6 +67,8 @@ Then(/^Log in should be successful$/) do
   element_exists "label marked:'LIVE CASINO'"
     flash "label marked:'LIVE CASINO'"
     puts 'Successfully Logged In'
+  else
+    fail 'LogIn was Unsuccessful'
   end
 
 end
