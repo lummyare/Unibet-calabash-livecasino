@@ -1,15 +1,17 @@
 Given(/^I land on Login screen$/) do
+  sleep 2
+  # k=set_location(latitude: 51.50722, longitude: -0.12750)
 
   k=set_location place:'Tower of London'
   if
-    k !=true
-  # set_location place:'London' ==true
+  k !=true
+    # set_location place:'London' ==true
     fail 'Location not set to London'
-  sleep 2
-@loginPage.verify_logIn_page "Log in with your Unibet account"
-  sleep 1
   else
- puts 'Location set success'
+    puts 'Location set success'
+    sleep 2
+    @loginPage.verify_logIn_page "Log in with your Unibet account"
+    sleep 1
   end
 
 end

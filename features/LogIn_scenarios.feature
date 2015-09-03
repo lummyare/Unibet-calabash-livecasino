@@ -1,7 +1,7 @@
 @login
 Feature: App Login
 
-@invalid_login
+@invalid_login @reset
   Scenario: Invalid Login credentials
     Given I land on Login screen
     And I enter an invalid login credentials
