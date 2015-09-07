@@ -19,19 +19,18 @@ GEM
       retriable (>= 1.3.3.1, < 1.5)
       rubyzip (~> 1.1)
       slowhandcuke (~> 0.0.3)
-    calabash-common (0.0.1)
-      cucumber (~> 1.3.0)
-    calabash-cucumber (0.14.3)
+    calabash-common (0.0.2)
+    calabash-cucumber (0.15.0)
       CFPropertyList
       awesome_print
       bundler (~> 1.3)
-      calabash-common (~> 0.0.1)
+      calabash-common (~> 0.0.2)
       cucumber (~> 1.3.17)
       edn (>= 1.0.6, < 2.0)
       geocoder (>= 1.1.8, < 2.0)
       httpclient (>= 2.3.2, < 3.0)
       json
-      run_loop (>= 1.3.3, < 2.0)
+      run_loop (>= 1.5.0, < 2.0)
       sim_launcher (~> 0.4.13)
       slowhandcuke (~> 0.0.3)
     claide (0.9.1)
@@ -53,13 +52,13 @@ GEM
       activesupport (>= 3.2.15)
       fuzzy_match (~> 2.0.4)
       nap (~> 0.8.0)
-    cocoapods-downloader (0.9.1)
+    cocoapods-downloader (0.9.3)
     cocoapods-plugins (0.4.2)
       nap
     cocoapods-stats (0.5.3)
       nap (~> 0.8)
-    cocoapods-trunk (0.6.1)
-      nap (>= 0.8)
+    cocoapods-trunk (0.6.4)
+      nap (>= 0.8, < 2.0)
       netrc (= 0.7.8)
     cocoapods-try (0.4.5)
     colored (1.2)
@@ -92,7 +91,7 @@ GEM
       rack
     retriable (1.4.1)
     rubyzip (1.1.7)
-    run_loop (1.4.1)
+    run_loop (1.5.0)
       CFPropertyList (~> 2.2)
       awesome_print (~> 1.2)
       json (~> 1.8)
@@ -121,7 +120,7 @@ PLATFORMS
 
 DEPENDENCIES
   calabash-android
-  calabash-cucumber (= 0.14.3)
+  calabash-cucumber (= 0.15.0)
   cocoapods
   colorize
   plist

@@ -1,7 +1,11 @@
 @login
 Feature: App Login
 
-@invalid_login @reset
+  Background:
+    Given I set location to london
+
+
+@invalid_login
   Scenario: Invalid Login credentials
     Given I land on Login screen
     And I enter an invalid login credentials
