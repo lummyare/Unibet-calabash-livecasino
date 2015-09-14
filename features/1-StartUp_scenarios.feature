@@ -1,4 +1,4 @@
-@startup
+@run_all
 Feature: App Start up test
 
   Background:
