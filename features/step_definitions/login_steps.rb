@@ -132,5 +132,14 @@ Then(/^I should go back to Log in Screen$/) do
 end
 
 Given(/^I set location to london$/) do
-  set_location(latitude: 51.50722, longitude: -0.12750)
+  uia_set_location place: 'London'
+  uia_set_location(latitude: 51.50722, longitude: -0.12750)
+  uia_set_location place: 'Tower of London'
+sleep 1
+  if uia_query(:alert).count > 0
+    uia_tap_mark 'Allow'
+    sleep 1
+    uia_tap_mark 'OK'
+  end
+
 end
