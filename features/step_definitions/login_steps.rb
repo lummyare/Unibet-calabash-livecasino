@@ -1,8 +1,6 @@
 Given(/^I land on Login screen$/) do
-  2.times {
-    set_location(latitude: 51.50722, longitude: -0.12750) }
-  sleep 2
-  # k=set_location(latitude: 51.50722, longitude: -0.12750)
+
+    uia_set_location(latitude: 51.50722, longitude: -0.12750)
 
   k=set_location place:'Tower of London'
   if
@@ -135,11 +133,13 @@ Given(/^I set location to london$/) do
   uia_set_location place: 'London'
   uia_set_location(latitude: 51.50722, longitude: -0.12750)
   uia_set_location place: 'Tower of London'
-sleep 1
+  sleep 2
+  # uia_tap_mark 'Retry'
+  # sleep 1
   if uia_query(:alert).count > 0
-    uia_tap_mark 'Allow'
-    sleep 1
-    uia_tap_mark 'OK'
+    uia_tap_mark 'Retry'
+  else
+    puts 'Location retry not displayed'
   end
 
 end
